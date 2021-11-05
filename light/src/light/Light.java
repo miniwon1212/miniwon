@@ -1,7 +1,7 @@
 package light;
 
 public class Light {
-	public static void main(String arg[]) {
+	public static void main(String args[]) {
 		long lightspeed;
 		long distance;
 		
