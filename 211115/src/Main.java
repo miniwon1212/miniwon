@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
-// 10869번 문제
-
 public class Main {
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
 		
+		/* 10869번 문제
+
 		int A = scan.nextInt();
 		int B = scan.nextInt();
 		scan.close();
@@ -16,5 +16,15 @@ public class Main {
 		System.out.println(A * B);
 		System.out.println(A / B);
 		System.out.println(A % B);
+		*/
+		
+		int A = scan.nextInt();
+		int B = scan.nextInt();
+		int C = scan.nextInt();
+		
+		System.out.println((A+B)%C);
+		System.out.println(((A%C) + (B%C))%C);
+		System.out.println((A*B)%C);
+		System.out.println(((A%C)*(B%C))%C);
 	}
 }
