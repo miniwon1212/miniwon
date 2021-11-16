@@ -1,29 +1,21 @@
 import java.util.Scanner;
-
+// 14681¹ø
 public class Main {
 	public static void main(String[] args) {
-
-		Scanner Scan = new Scanner(System.in);
-
-		//2753¹ø
-		int y = Scan.nextInt();
-		Scan.close();
-
-		if (y % 4 == 0 && y % 100 == 0 || y % 400 == 0) {
-			
-				System.out.println(1);
-			}else if(y % 4 == 0 && y % 100 != 0){
-				System.out.println(1);
-			}else 
-		System.out.println(0);
-		}
-	
-	/*
-	 * if (y % 4 == 0 && y % 100 != 0 || y % 400 == 0) {
-			
-				System.out.println(1);
-			}else 
-		System.out.println(0);
-		}
-	 * */
+		 Scanner scan = new Scanner(System.in);
+		 
+		 int x = scan.nextInt();
+		 int y = scan.nextInt();
+		 scan.close();
+		 
+		 if(x >= 0 && y >= 0) {
+			 System.out.println(1);
+		 }else if(x <= 0 && y >= 0) {
+			 System.out.println(2);
+		 }else if(x <= 0 && y <= 0) {
+			 System.out.println(3);
+		 }else if (x >= 0 && y <= 0) {
+			 System.out.println(4);
+		 }
+	}
 }
